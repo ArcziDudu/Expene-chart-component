@@ -1,0 +1,112 @@
+@import './colors';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans';
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: $Background;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container{
+        width: 343px;
+        height: 534px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    .header{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        background-color: $SoftRed;
+        border-radius: 10px;
+        .left{
+            .title{
+                font-weight: 400;
+                font-size: 15px;
+                color: $PrimaryWhite;
+            }
+            .amount{
+                font-weight: 700;
+                font-size: 24px;
+                color: $PrimaryWhite;
+            }
+            .bars-landscape{
+                display: none;
+            }
+        }
+        .right{
+            img{
+                width: 60px;
+                height: 40px;
+                margin: 8px 4px 9px 0;
+            }
+        }
+    }
+    .main{
+        border-radius: 10px;
+        background-color: $CardWhite;
+        padding: 24px 20px;
+        .title-main{
+            font-weight: 700;
+            font-size: 24px;
+            color: $DarkBrown;
+            margin-bottom: 52px;
+        }
+        .bars-box{
+            height: 177px;
+            background-color: blue;
+            margin-bottom: 24px;
+        }
+        .hr{
+            width: 303px;
+            height: 2px;
+            margin-bottom: 24px;
+            background-color: $Background;
+            border-radius: 1px;
+        }
+        .footer{
+            display: flex;
+            justify-content: space-between;
+          .left{
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              .title-footer{
+                font-weight: 400;
+                font-size: 15px;
+                color: $Mediumbrown;
+            }
+            span{
+                color: $DarkBrown;
+                font-weight: 700;
+                font-size: 30px;
+            }
+          }
+          .right{
+              align-self: flex-end;
+              display: flex;
+              flex-direction: column;
+              text-align: right;
+              .percent{
+                font-weight: 700;
+                font-size: 15px;
+                color: $DarkBrown
+              }
+              .last{
+                font-weight: 400;
+                font-size: 15px;
+                color: $Mediumbrown;
+              }
+          }
+        }
+    }
+    }
+
+}
+@import './landscape';

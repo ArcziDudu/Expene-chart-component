@@ -1,0 +1,198 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'DM Sans';
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f8e9dd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container {
+  width: 343px;
+  height: 534px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .container .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  background-color: #ec775f;
+  border-radius: 10px;
+}
+
+body .container .header .left .title {
+  font-weight: 400;
+  font-size: 15px;
+  color: #fff;
+}
+
+body .container .header .left .amount {
+  font-weight: 700;
+  font-size: 24px;
+  color: #fff;
+}
+
+body .container .header .left .bars-landscape {
+  display: none;
+}
+
+body .container .header .right img {
+  width: 60px;
+  height: 40px;
+  margin: 8px 4px 9px 0;
+}
+
+body .container .main {
+  border-radius: 10px;
+  background-color: #fffbf6;
+  padding: 24px 20px;
+}
+
+body .container .main .title-main {
+  font-weight: 700;
+  font-size: 24px;
+  color: #382314;
+  margin-bottom: 52px;
+}
+
+body .container .main .bars-box {
+  height: 177px;
+  background-color: blue;
+  margin-bottom: 24px;
+}
+
+body .container .main .hr {
+  width: 303px;
+  height: 2px;
+  margin-bottom: 24px;
+  background-color: #f8e9dd;
+  border-radius: 1px;
+}
+
+body .container .main .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .container .main .footer .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .container .main .footer .left .title-footer {
+  font-weight: 400;
+  font-size: 15px;
+  color: #92857a;
+}
+
+body .container .main .footer .left span {
+  color: #382314;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+body .container .main .footer .right {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: right;
+}
+
+body .container .main .footer .right .percent {
+  font-weight: 700;
+  font-size: 15px;
+  color: #382314;
+}
+
+body .container .main .footer .right .last {
+  font-weight: 400;
+  font-size: 15px;
+  color: #92857a;
+}
+
+@media (orientation: landscape) and (min-width: 375px) {
+  body .container {
+    width: 100vw;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body .container .header {
+    position: relative;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 100vh;
+    height: 50vw;
+  }
+  body .container .header .bars-landscape {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    display: block;
+    width: 90%;
+    height: 60%;
+    background-color: blue;
+    margin-top: 30px;
+  }
+  body .container .main {
+    width: 100vh;
+    height: 50vw;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  body .container .main .bars-box {
+    display: none;
+  }
+}
+/*# sourceMappingURL=main.css.map */
