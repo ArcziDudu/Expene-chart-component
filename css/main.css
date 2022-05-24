@@ -158,11 +158,15 @@ body .container .main .footer .right .last {
 
 @media (orientation: landscape) and (min-width: 375px) {
   body .container {
+    margin: auto;
     width: 100vw;
+    height: 100vh;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   body .container .header {
     position: relative;
@@ -170,7 +174,7 @@ body .container .main .footer .right .last {
         -ms-grid-row-align: center;
         align-self: center;
     width: 100vh;
-    height: 50vw;
+    height: 40vw;
   }
   body .container .header .bars-landscape {
     position: absolute;
@@ -186,7 +190,7 @@ body .container .main .footer .right .last {
   }
   body .container .main {
     width: 100vh;
-    height: 50vw;
+    height: 40vw;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;

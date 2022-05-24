@@ -1,14 +1,16 @@
 @media(orientation: landscape) and (min-width: 375px){
  body{
      .container{
+         margin: auto;
          width: 100vw;
+         height: 100vh;
          flex-direction: row;
-        
+         justify-content: space-around;
          .header{
              position: relative;
              align-self: center;
              width: 100vh;
-             height: 50vw;
+             height: 40vw;
              .bars-landscape{
                  position: absolute;
                  top: 50%;
@@ -23,7 +25,7 @@
          }
          .main{
              width: 100vh;
-             height: 50vw;
+             height: 40vw;
              align-self: center;
              .bars-box{
                  display: none;
