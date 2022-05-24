@@ -60,7 +60,7 @@ body .container .header .left .amount {
   color: #fff;
 }
 
-body .container .header .left .bars-landscape {
+body .container .header .bars-landscape {
   display: none;
 }
 
@@ -84,9 +84,90 @@ body .container .main .title-main {
 }
 
 body .container .main .bars-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 177px;
-  background-color: blue;
   margin-bottom: 24px;
+}
+
+body .container .main .bars-box .chart {
+  position: relative;
+}
+
+body .container .main .bars-box .chart .black {
+  position: absolute;
+  left: -60%;
+  top: -48px;
+  height: 40px;
+  width: 75px;
+  color: #fff;
+  background-color: #382314;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+  border-radius: 5px;
+  z-index: 10;
+  display: none;
+}
+
+body .container .main .bars-box .chart .rectangle {
+  width: 33px;
+  height: 50px;
+  background-color: #ec775f;
+  margin-bottom: 11px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+body .container .main .bars-box .chart .rectangle:hover {
+  background-color: #ff9b86;
+}
+
+body .container .main .bars-box .chart .day {
+  font-weight: 400;
+  font-size: 12px;
+  color: #92857a;
+  text-align: center;
+}
+
+body .container .main .bars-box .chart .tue {
+  height: 100px;
+}
+
+body .container .main .bars-box .chart .tue:hover ~ .chart:first-of-type {
+  display: block;
+}
+
+body .container .main .bars-box .chart .wed {
+  height: 150px;
+  background-color: #76b5bc;
+}
+
+body .container .main .bars-box .chart .wed:hover {
+  background-color: #B4E0E5;
+}
+
+body .container .main .bars-box .chart .thu {
+  height: 89px;
+}
+
+body .container .main .bars-box .chart .fri {
+  height: 67px;
+}
+
+body .container .main .bars-box .chart .sat {
+  height: 124px;
+}
+
+body .container .main .bars-box .chart .sun {
+  height: 73px;
 }
 
 body .container .main .hr {
@@ -156,47 +237,90 @@ body .container .main .footer .right .last {
   color: #92857a;
 }
 
-@media (orientation: landscape) and (min-width: 375px) {
-  body .container {
-    margin: auto;
+@media (min-width: 810px) {
+  body {
     width: 100vw;
     height: 100vh;
-    -webkit-box-orient: horizontal;
+  }
+  body .container {
+    min-width: 540px;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   body .container .header {
-    position: relative;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    width: 100vh;
-    height: 40vw;
+    padding: 27px 32px;
+    border-radius: 20px;
+    margin-bottom: 24px;
+  }
+  body .container .header .left .title {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  body .container .header .left .amount {
+    font-size: 32px;
+    color: #fff;
   }
   body .container .header .bars-landscape {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    display: block;
-    width: 90%;
-    height: 60%;
-    background-color: blue;
-    margin-top: 30px;
+    display: none;
+  }
+  body .container .header .right img {
+    width: 72px;
+    height: 48px;
+    margin: 12px 12px 11px 0;
   }
   body .container .main {
-    width: 100vh;
-    height: 40vw;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    border-radius: 20px;
+    padding: 32px 40px 40px;
+  }
+  body .container .main .title-main {
+    font-size: 32px;
+    margin-bottom: 66px;
   }
   body .container .main .bars-box {
-    display: none;
+    height: 178px;
+    margin-bottom: 32px;
+  }
+  body .container .main .bars-box .chart .black {
+    left: -25%;
+  }
+  body .container .main .bars-box .chart .rectangle {
+    width: 50.36px;
+    background-color: #ec775f;
+    margin-bottom: 11px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  body .container .main .bars-box .chart .day {
+    font-size: 15px;
+  }
+  body .container .main .bars-box .chart .wed {
+    height: 150px;
+    background-color: #76b5bc;
+  }
+  body .container .main .hr {
+    width: 460px;
+    margin-bottom: 32px;
+  }
+  body .container .main .footer .left .title-footer {
+    font-size: 18px;
+  }
+  body .container .main .footer .left span {
+    font-size: 48px;
+  }
+  body .container .main .footer .right .percent {
+    font-size: 18px;
+  }
+  body .container .main .footer .right .last {
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=main.css.map */

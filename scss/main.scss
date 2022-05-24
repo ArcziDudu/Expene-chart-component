@@ -36,9 +36,9 @@ body{
                 font-size: 24px;
                 color: $PrimaryWhite;
             }
-            .bars-landscape{
-                display: none;
-            }
+        }
+        .bars-landscape{
+            display: none;
         }
         .right{
             img{
@@ -59,9 +59,68 @@ body{
             margin-bottom: 52px;
         }
         .bars-box{
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
             height: 177px;
-            background-color: blue;
             margin-bottom: 24px;
+            .chart{
+                position: relative;
+                .black{
+                    position: absolute;
+                    left: -60%;
+                    top: -48px;
+                    height: 40px;
+                    width: 75px;
+                    color: $PrimaryWhite;
+                    background-color: $DarkBrown;
+                    text-align: center;
+                    line-height: 40px;
+                    font-size: 18px;
+                    border-radius: 5px;
+                    z-index: 10;
+                    display: none;
+                }
+                .rectangle{
+                    width: 33px;
+                    height: 50px;
+                    background-color: $SoftRed;
+                    margin-bottom: 11px;
+                    border-radius: 3px;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: $RedHover;
+                    }
+                }
+                .day{
+                    font-weight: 400;
+                    font-size: 12px;
+                    color: $Mediumbrown;
+                    text-align: center;
+                }
+                .tue{
+                    height: 100px;
+                }
+                .wed{
+                    height: 150px;
+                    background-color: $Cyan;
+                    &:hover{
+                        background-color: #B4E0E5;;
+                    }
+                }
+                .thu{
+                    height: 89px;
+                }
+                .fri{
+                    height: 67px;
+                }
+                .sat{
+                    height: 124px;
+                }
+                .sun{
+                    height: 73px;
+                }
+            }
         }
         .hr{
             width: 303px;
@@ -109,4 +168,4 @@ body{
     }
 
 }
-@import './landscape';
+@import './medium';
