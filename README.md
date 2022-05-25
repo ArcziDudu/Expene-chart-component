@@ -1,1 +1,1 @@
-Mini project form https://www.frontendmentor.io/
+inspired from 
