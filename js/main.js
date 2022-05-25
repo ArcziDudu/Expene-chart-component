@@ -12,8 +12,20 @@ const four = document.querySelector('.four');
 const five = document.querySelector('.five');
 const six = document.querySelector('.six');
 const seven = document.querySelector('.seven');
+const days = document.querySelectorAll('.day');
+const todayWeekday = new Date().toLocaleString('en-GB', {
+    weekday: 'short',
+  }).toLowerCase();
 
-
+const checkWeekDay = () =>{
+    days.forEach(Element =>{
+        if(Element.textContent === todayWeekday){
+            Element.previousElementSibling.style.backgroundColor= '#76b5bc';
+            
+        }
+    })
+}
+checkWeekDay()
 mon.addEventListener('mouseenter', ()=>{
     one.style.display = 'block';
 })

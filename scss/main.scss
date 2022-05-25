@@ -89,7 +89,7 @@ body{
                     border-radius: 3px;
                     cursor: pointer;
                     &:hover{
-                        background-color: $RedHover;
+                        background-color: $RedHover;                  
                     }
                 }
                 .day{
@@ -103,10 +103,6 @@ body{
                 }
                 .wed{
                     height: 150px;
-                    background-color: $Cyan;
-                    &:hover{
-                        background-color: #B4E0E5;;
-                    }
                 }
                 .thu{
                     height: 89px;
@@ -120,6 +116,7 @@ body{
                 .sun{
                     height: 73px;
                 }
+              
             }
         }
         .hr{

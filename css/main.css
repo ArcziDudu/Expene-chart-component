@@ -141,17 +141,8 @@ body .container .main .bars-box .chart .tue {
   height: 100px;
 }
 
-body .container .main .bars-box .chart .tue:hover ~ .chart:first-of-type {
-  display: block;
-}
-
 body .container .main .bars-box .chart .wed {
   height: 150px;
-  background-color: #76b5bc;
-}
-
-body .container .main .bars-box .chart .wed:hover {
-  background-color: #B4E0E5;
 }
 
 body .container .main .bars-box .chart .thu {
@@ -168,6 +159,10 @@ body .container .main .bars-box .chart .sat {
 
 body .container .main .bars-box .chart .sun {
   height: 73px;
+}
+
+body .container .main .active {
+  width: 40px;
 }
 
 body .container .main .hr {
@@ -304,7 +299,6 @@ body .container .main .footer .right .last {
   }
   body .container .main .bars-box .chart .wed {
     height: 150px;
-    background-color: #76b5bc;
   }
   body .container .main .hr {
     width: 460px;
